@@ -60,22 +60,22 @@ body {
   white-space: nowrap;
 }
 
-.significative {
+.rate {
   display: flex;
   align-items: center;
   -moz-column-gap: 7px;
        column-gap: 7px;
 }
-.significative__icon {
+.rate__icon {
   cursor: auto !important;
 }
-.significative__icon.bi-clock {
+.rate__icon.bi-clock {
   color: #DE5364;
 }
-.significative__icon.bi-calendar2-week {
+.rate__icon.bi-calendar2-week {
   color: #FD7E14;
 }
-.significative__caption {
+.rate__caption {
   white-space: nowrap;
 }
 
