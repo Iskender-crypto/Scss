@@ -123,15 +123,11 @@ body {
   -o-object-position: center;
      object-position: center;
 }
-.object-list .object__section {
+.object-list .object__header {
   display: flex;
   align-items: center;
-}
-.object-list .object__section--top {
-  margin-bottom: 10px;
-}
-.object-list .object__section--between {
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 .object-list .object__content {
   padding: 16px 20px;
@@ -192,6 +188,11 @@ body {
   margin: 0;
   width: 100%;
   margin-bottom: 15px;
+}
+.object-list .object__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .object-list .object--img-top {
   flex-direction: column;
