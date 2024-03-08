@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="d-flex align-items-end mb-3">
+            <h2>Оформление заказа</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="border-1 p-3 order">
+                    <h4 class="mb-3">Данные</h4>
+                    <div class="mb-4">
+                        <input type="text" class="form-control" placeholder="ФИО" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="mb-4">
+                        <input type="tel" class="form-control" placeholder="Номер телефона" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" class="form-control" placeholder="Email" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="border-1 p-3">
+                    <h4 class="mb-3">Ваш заказ</h4>
+                    <div class="cart-item border-top pt-2 mb-3">
+                        <div class="row">
+                            <div class="col-12 col-md-3 mb-2 mb-md-0">
+                                <div class="bg-gray">
+                                    <img class="cart-item__img"
+                                        src="https://avatars.mds.yandex.net/get-marketpic/5395593/pic4ee188fba539c0dc56a85d9de8a51ab1/100x100"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-8 col-md-6">
+                                <div class="d-flex flex-column h-100">
+                                    <h4 class="fs-6">Сотовый поликарбонат бронза, Ultramarin, 8 мм, 12 метров, 1 лист
+                                        Продавец</h4>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-3">
+                                <div
+                                    class="d-flex flex-row flex-sm-column justify-content-between align-items-end h-100 mt-2 mt-sm-0">
+                                    <p class="text-success fw-bold text-lg fs-4 mb-0 ">657 ₽</p>
+                                    <div class="count-button mt-0 mt-sm-auto">
+                                        <button class="count-button__btn">-</button>
+                                        <div class="count-button__value">1</div>
+                                        <button class="count-button__btn">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="m-0 mb-3">
+                    <div class="d-flex justify-content-between">
+                        <p class="mb-1 fw-bold">Итого:</p>
+                        <h2 class="fs-3 fw-bold text-success">21 483 ₽</h2>
+                    </div>
+                    <button type="button" class="btn btn-warning fs-6 fw-normal button-cart px-5">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>

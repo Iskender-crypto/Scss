@@ -632,3 +632,116 @@ body {
     content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='currentColor' class='bi bi-arrow-right-short' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8'/></svg>");
   }
 }
+
+// =========================
+// =========================
+// =========================
+// =========================
+// =========================
+// =========================
+// =========================
+// =========================
+// =========================
+// =========================
+// =========================
+.bg-gray{
+    background-color: #F8F7F5;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.cart-item{
+    &__img{
+        width: 100%;
+        min-height: 50px;
+        max-height: 200px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+.button-cart{
+    background-color: #FCE000;
+    border: none;
+    padding: 12px 0px;
+    border-radius: 13px;
+    &:hover{
+        background-color: #f3d917;
+    }
+    &:focus{
+        background-color: #f3d917;
+
+    }
+}
+.count-button{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color:#f1f0ed;
+    width: fit-content;
+    border-radius:5px;
+    padding: 0px 5px;
+    &__btn{
+        background-color:transparent;
+        padding:0 12px;
+        font-size: 24px;
+        line-height:100%;
+        vertical-align:top;
+        padding-bottom:3px;
+        border: none;
+    }
+    @media screen and (max-width: 576px){
+        width:fit-content;
+        padding: 0;
+        
+    }
+}
+
+.input-field{
+    position: relative;
+    overflow: hidden;
+    .form-control{
+        background-color: transparent !important;
+        border: 2px solid rgb(209, 208, 208);
+        border-radius: 11px;
+        padding: 7px 10px;
+        padding-right: 135px;
+        &:focus{
+            box-shadow: none !important;
+            border: 2px solid black;
+        }
+        
+    }
+    &::after{
+        position: absolute;
+        border-radius: 11px;
+        right: 5px;
+        top: 0;
+        display: flex;
+        height: calc(100% - 10px);
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: black;
+        padding: 0px 20px;
+        align-items: center;
+        justify-content: center;
+        content: "Применить";
+        color: white;
+        cursor: pointer;
+    }
+    &::after:hover{
+        background-color: rgb(191, 56, 56);
+    }
+    
+
+    
+}
+
+.order{
+    .form-control{
+        border: 2px solid gray;
+        &:focus{
+            border: 2px solid black;
+            box-shadow: none;
+        }
+    }
+}
